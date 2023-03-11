@@ -12,7 +12,7 @@
         "format:fix": "prettier -w .",
         "lint": "ng lint",
         "lint:fix": "ng lint --fix",
-        "add-change": "git add -A .",
+        "add-change": "git update-index --again",
         "before-commit": "run-s format:fix lint:fix add-change test:cli",
         "ci": "run-s format lint test:cli",
         "prepare": "husky install"
