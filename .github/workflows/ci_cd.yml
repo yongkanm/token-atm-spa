@@ -49,6 +49,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           repository-name: yongkanm/token-atm
-          folder: dist
+          folder: dist/token-atm-spa
           force: false
           token: ${{ secrets.PAGE_REPO_TOKEN }} # TODO: GitHub Pages Deployment (require secret to be setup (PAT for the public repo))
