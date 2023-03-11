@@ -41,11 +41,14 @@ jobs:
         run: |
           npm run check
 
+      - name: Build Angular project
+        run: |
+          npm build
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           repository-name: yongkanm/token-atm
           folder: dist
           force: false
-          token: ${{ secrets.PAGE_REPO_TOKEN }}
-      # TODO: GitHub Pages Deployment (require secret to be setup (PAT for the public repo))
+          token: ${{ secrets.PAGE_REPO_TOKEN }} # TODO: GitHub Pages Deployment (require secret to be setup (PAT for the public repo))
