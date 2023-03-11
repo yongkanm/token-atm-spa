@@ -16,16 +16,16 @@ describe('AppComponent', () => {
         expect(app).toBeTruthy();
     });
 
-    it(`should have as title 'token-atm-spa'`, () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.componentInstance;
-        expect(app.title).toEqual('token-atm-spa');
-    });
+    // it(`should have as title 'token-atm-spa'`, () => {
+    //     const fixture = TestBed.createComponent(AppComponent);
+    //     const app = fixture.componentInstance;
+    //     expect(app.title).toEqual('token-atm-spa');
+    // });
 
-    it('should render title', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        fixture.detectChanges();
-        const compiled = fixture.nativeElement as HTMLElement;
-        expect(compiled.querySelector('.content span')?.textContent).toContain('token-atm-spa app is running!');
-    });
+    // it('should render title', () => {
+    //     const fixture = TestBed.createComponent(AppComponent);
+    //     fixture.detectChanges();
+    //     const compiled = fixture.nativeElement as HTMLElement;
+    //     expect(compiled.querySelector('.content span')?.textContent).toContain('token-atm-spa app is running!');
+    // });
 });

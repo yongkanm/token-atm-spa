@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-    // test change
-    title = 'token-atm-spa';
+    title = 'Token ATM';
 }
