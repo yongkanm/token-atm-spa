@@ -1,4 +1,4 @@
-name: Token ATM GitHub Pages CI/CD
+name: Token ATM Pull Request Check
 
 on:
   pull_request:
