@@ -1,7 +1,7 @@
 name: Token ATM GitHub Pages CI/CD
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -37,18 +37,6 @@ jobs:
         run: |
           npm ci
 
-      - name: Pre-Deployment check
+      - name: Code check (formatter, linter, and testing)
         run: |
           npm run check
-
-      - name: Build Angular project
-        run: |
-          npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          repository-name: yongkanm/token-atm
-          folder: dist/token-atm-spa
-          force: false
-          token: ${{ secrets.PAGE_REPO_TOKEN }} # TODO: GitHub Pages Deployment (require secret to be setup (PAT for the public repo))
